@@ -2439,15 +2439,22 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "item(gtceu:seed_oil_bucket)"
+							"ftbfiltersystem:filter": "only_one(item(gtceu:seed_oil_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:seed_oil\"}}))"
 						}
 					}
-					title: "{quests.tfg_tips.tools_tips.seed_oil.task}"
+					title: "{quests.tfg_tips.tools_tips.seed_oil.task_seed_oil}"
 					type: "item"
 				}
 				{
 					id: "62C27C8AC16CBE20"
-					item: "tfg:peanut_oil_bucket"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "only_one(item(tfg:peanut_oil_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"tfg:peanut_oil\"}}))"
+						}
+					}
+					title: "{quests.tfg_tips.tools_tips.seed_oil.task_peanut_oil}"
 					type: "item"
 				}
 			]
